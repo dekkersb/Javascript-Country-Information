@@ -23,9 +23,9 @@
 - [X] HTML
 - [X] div maken (met id)
 - [X] div selecteren (getElement)
-- [ ] createElement -> img
-- [ ] url toevoegen aan het plaatje `img.src = url`, `img.setAttribute('src', url)`
-- [ ] appendChild -> aan het divje
+- [X] createElement -> img
+- [X] url toevoegen aan het plaatje `img.src = url`, `img.setAttribute('src', url)`
+- [X] appendChild -> aan het divje
 
 
 
