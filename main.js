@@ -2,12 +2,11 @@ const searchButton = document.getElementById("searchButton")
 
 const inputField = document.getElementById("inputField")
 
-
 inputField.addEventListener("keyup", async (e) => {
     if (e.key === "Enter") {
-        const query = inputField.value;
-        const response = await axios.get(
-            `https://restcountries.eu/rest/v2/name/${query}`)
+                const query = inputField.value;
+                const response = await axios.get(
+                    `https://restcountries.eu/rest/v2/name/${query}`)
 
         console.log(response.data[0])
 
@@ -19,7 +18,10 @@ inputField.addEventListener("keyup", async (e) => {
         let language = [];
 
         const flag = document.getElementById("countryFlag");
+        flag.innerHTML = "";
         const flagOfCountry = document.createElement("img");
+        flagOfCountry.style.width = "400px";
+        flagOfCountry.style.height = "210px";
         flagOfCountry.setAttribute('src', response.data[0].flag);
         flag.appendChild(flagOfCountry);
 
@@ -72,11 +74,16 @@ inputField.addEventListener("keyup", async (e) => {
 
             console.log(languageOfCountry)
         }
+
+        function clearInputField () {
+            inputField.value = null;
+        }
+
         getCountryInfo();
         getCurrency();
         getLanguage();
+        clearInputField();
     }
-
 });
 
     searchButton.addEventListener("click", async () => {
@@ -149,9 +156,14 @@ inputField.addEventListener("keyup", async (e) => {
             console.log(languageOfCountry)
         }
 
+        function clearInputField () {
+            inputField.value = null;
+        }
+
         getCountryInfo();
         getCurrency();
         getLanguage();
+        clearInputField();
     });
 
 
