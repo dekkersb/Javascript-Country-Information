@@ -31,19 +31,19 @@
 
 8. Maak een inputveld op de pagina en zorg ervoor dat als de gebruiker op enter drukt, de functie wordt aangeroepen waarmee de gegevens over België worden opgehaald.
 
-- [ ] HTML
-- [ ] Maak een inputveld
-- [ ] id geven aan het inputveld
-- [ ] Interacties programmeren
-- [ ] Input veld selecteren
-- [ ] Event listener toevoegen aan her inputveld (keyup)
-- [ ] In het event kijken naar de "code" (event.code)
-- [ ] Als event.code "Enter" is dan -> data ophalen uit de api
+- [X] HTML
+- [X] Maak een inputveld
+- [X] id geven aan het inputveld
+- [X] Interacties programmeren
+- [X] Input veld selecteren
+- [X] Event listener toevoegen aan her inputveld (keyup)
+- [X] In het event kijken naar de "code" (event.code)
+- [X] Als event.code "Enter" is dan -> data ophalen uit de api
 
 
 
 9. Zorg ervoor dat de waarde uit het input veld wordt gebruikt als query voor het GET request.
 
-- [ ] selecteer het input veld (const inputfield = document...)
-- [ ] const query = inputfield.value
-- [ ] vervang belgium in url voor de "dynamische waarde" (query)
+- [X] selecteer het input veld (const inputfield = document...)
+- [X] const query = inputfield.value
+- [X] vervang belgium in url voor de "dynamische waarde" (query)
