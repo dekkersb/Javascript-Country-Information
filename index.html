@@ -10,21 +10,23 @@
 <h1>Let's search some country information!</h1>
 <img src="./assets/13599.jpg">
 <br/>
-<input type="text" id="inputField">
+<input type="text" id="inputField" placeholder="What beautiful country are you looking for...">
 <br/>
 <br/>
 <button id="searchButton">LAND INFO HIER!</button>
 <br/>
-<div id="container">
+<div id="containerInfo">
     <br/>
     <br/>
     <div id="countryFlag"></div>
-    <p id="countryName"></p>
+    <h3 id="countryName"></h3>
     <p id="countryInfo"></p>
     <p id="countryCurrency"></p>
     <p id="countryLanguage"></p>
 </div>
-
+<div id="containerError">
+    <h2 id="errorMessage"></h2>
+</div>
 <script src="main.js"></script>
 </body>
 </html>

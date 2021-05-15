@@ -1,3 +1,32 @@
 h1 {
     color: blueviolet;
 }
+
+#searchButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#inputField {
+    width: 400px;
+    font-size: 20px;
+    font-style: italic;
+    padding: 16px;
+
+}
+
+#inputField:focus {
+    border: 3px solid #4CAF50;
+    width: 500px;
+    height: 50px;
+}
+
+#errorMessage {
+    color: red;
+}
